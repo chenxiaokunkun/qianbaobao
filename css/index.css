@@ -1,0 +1,558 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 微软雅黑;
+
+    /*怪异盒子*/
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+/*公用样式 开始*/
+.aqjl{/*安全距离*/
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.aqjl::after{/*清除浮动*/
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/*公用样式 结束*/
+
+
+/*头部样式 开始*/
+.tou{/*头部条*/
+    height: 40px;
+    background: #404040;
+}
+
+.mianf{/*免费热线*/
+    color: white;
+    line-height: 40px;
+    font-size: 12px;
+    height: 40px;
+    float: left;
+}
+
+.tright{/*字体往右*/
+    float: right;
+    font-size: 0;
+    height: 40px;
+    line-height: 40px;
+}
+
+.tright>a{/*取消下划线*/
+    text-decoration: none;
+}
+
+.kuais{/*快速注册*/
+    color: #3d87e2;/*字体颜色*/
+    font-size: 12px;/*字体大小*/
+}
+
+.liji{/*立即登录*/
+    color: #38d823;/*字体颜色*/
+    margin: 0 24px;
+    font-size: 12px;/*字体大小*/
+}
+
+.bangz{/*帮助中心*/
+    color: white;/*字体颜色*/
+    font-size: 12px;/*字体大小*/
+}
+/*头部样式 结束*/
+
+
+/*导航栏样式 开始*/
+
+.baid{/*白色背景条*/
+    height: 75px;/*高度*/
+    border: 1px solid #a3a3a3;/*边框*/
+}
+
+.dleft{/*图片往 左*/
+    float: left;
+    margin-top: 15px;
+}
+
+.dziti{/*字体样式*/
+    float: right;/*字体往右*/
+    color: #171717;/*字体颜色*/
+    font-size: 18px;/*字体大小*/
+    list-style: none;/*取消有序列表*/
+}
+
+.dziti>li{/*字体样式*/
+    width: 130px;/*宽度*/
+    height: 75px;/*高度*/
+    line-height: 75px;/*居中*/
+    display: inline-block;/*行块级*/
+    text-align: center;/*水平居中*/
+}
+
+#ul li:hover{
+    background: #c7c7c7;/*伪类(鼠标经过)*/
+}
+
+/*导航栏样式 结束*/
+
+
+
+/*banner样式 开始*/
+
+.kd{/*背景框架*/
+    width: 100%;/*宽度*/
+    background: #f8f8f8;/*背景颜色*/
+}
+
+.bN{/*banner样式*/
+    height: 375px;/*高度*/
+    background-position: center top;/*banner 定位*/
+    background-repeat: no-repeat;/*背景图 不平铺*/
+    background-image: url(../img/banner.jpg);/*图片*/
+}
+
+/*banner样式 结束*/
+
+
+
+/*分类层样式 开始*/
+
+.fkd{/*分层宽度*/
+    width: 100%;/*宽度*/
+    height: 200px;/*高度*/
+    text-align: center;/*水平居中*/
+    margin-top: 20px;/*外 上边距*/
+}
+
+
+.fleft{/*投资理财样式*/
+    width: 242px;/*宽度*/
+    float: left;/*往左*/
+    display: inline-block;/*行块级*/
+}
+
+.fzhong{/*信用贷款*/
+    width: 242px;/*宽度*/
+    display: inline-block;/*行块级*/
+}
+
+.fright{/*安全保障*/
+    width: 242px;/*宽度*/
+    float: right;/*往右*/
+    display: inline-block;/*行块级*/
+}
+
+.fziti{/*投资理财  信用贷款  安全保障*/
+    color: #2b2b2b;
+    font-size: 18px;
+    margin: 15px 0 10px 0;
+}
+
+.fziti2{/*小 字体样式*/
+    color: #2b2b2b;
+    font-size: 12px;
+}
+/*分类层样式 结束*/
+
+
+
+/*投资列表层样式 开始*/
+.table4{
+    width: 100%;/*宽度*/
+    padding: 0 10px;
+    text-align: left;/*水平居左*/
+    background: #def0fa;/*背景颜色*/
+    border: 1px solid #bfbfbf;/*边框*/
+
+}
+
+#thead4{ /*icon&投资列表*/
+    height: 40px;/*高度*/
+    color: #2b2b2b;/*字体颜色*/
+    font-size: 15px;/*字体大小*/
+    border-bottom: 1px solid #bfbfbf;
+}
+
+#thead4>.icon-chart-bar{color: #224e73} /*icon颜色*/
+
+/*表身样式 开始*/
+.td-4{/*表身字体*/
+    height: 72px;/*高度*/
+    font-size: 18px;/*字体大小*/
+    text-align: center;/*水平居中*/
+}
+
+.td1{width: 112px}
+.td2{width: 180px}/*借款标题*/
+.td3{width: 200px}/*年利率*/
+.td4{width: 210px}/*金额*/
+.td5{width: 190px}/*期限*/
+.td6{width: 136px}/*进度*/
+.td7{width: 160px}
+
+
+
+.td1-1{/*理财宝A计划 等等 样式*/
+    color: #2b2b2b;/*字体颜色*/
+    height: 72px;/*高度*/
+    font-size: 15px;/*字体大小*/
+    text-align: center;/*水平居中*/
+    border-bottom: 1px dashed #bfbfbf;/*虚线*/
+}
+
+
+.shi{/*实 样式*/
+    width: 30px;/*宽度*/
+    height: 30px;/*高度*/
+    line-height: 30px;
+    color: white;/*字体颜色*/
+    border-radius: 3px;/*圆角*/
+    background: #24a9f1;/*背景颜色*/
+    text-align: center;/*水平居中*/
+    display: inline-block;/*行块级*/
+}
+
+.baifenbai{/*100% 样式*/
+    width: 44px;/*宽度*/
+    height: 44px;/*高度*/
+    line-height: 38px;
+    font-size: 12px;/*字体大小*/
+    border-radius: 50%;/*圆角*/
+    background: white;/*背景颜色*/
+    display: inline-block;/*行块级*/
+    border: 3px solid #447d19;/*描边*/
+    text-align: center;/*水平居中*/
+}
+
+
+.td1-01{/*立即加入*/
+    width: 88px;/*宽度*/
+    height: 26px;/*高度*/
+    color: white;/*字体颜色*/
+    line-height: 26px;
+    font-size: 12px;/*字体大小*/
+    border-radius: 26px;/*圆角*/
+    background: #0090ff;/*背景颜色*/
+    display: inline-block;/*行块级*/
+    text-align: center;/*水平居中*/
+}
+
+.jingg tr:hover{/*表身伪类鼠标经过*/
+    background: #fdfaee;
+}
+/*表身样式 结束*/
+
+
+
+.tf1{/*查看更多投资理财项目*/
+    height: 62px;/*高度*/
+    color: #9c9c9c;/*字体颜色*/
+    line-height: 62px;
+    text-align: center;/*水平居中*/
+}
+/*投资列表层样式 结束*/
+
+
+
+
+
+/*投资效果样式 开始*/
+.touzic{ /*投资层*/
+    width: 100%;/*宽度*/
+    height: 353px;/*高度*/
+    margin-top: 26px;/*外边距 上*/
+    background: white;/*背景颜色*/
+    border: 1px solid #bfbfbf;/*描边*/
+}
+
+
+.touzixiaoguo{/*投资效果 底层*/
+    height: 38px;/*高度*/
+    padding: 0 10px;/*内边距*/
+    color: #2b2b2b;/*字体颜色*/
+    font-size: 15px;/*字体大小*/
+    line-height: 38px;
+    border-bottom: 1px solid #bfbfbf;/*下划线*/
+}
+
+
+.tzicon1{/*投资效果图标*/
+    width: 25%;/*宽度*/
+    float: left;/*往左*/
+    padding: 54px;/*内边距*/
+    list-style: none;/*去除有序列表*/
+    text-align: center;/*水平居中*/
+    display: inline-block;/*行快级*/
+}
+
+
+
+.leijijine{/*累计总金额  为用户自动投标 为用户累计赚取*/
+    color: #2f2f2f;/*字体颜色*/
+    display: inline-block;/*行快级*/
+    text-align: center;/*水平居中*/
+    margin: 30px 0 15px;/*外边距*/
+}
+
+.jiaruzhongrc{/*加入总人次*/
+    margin: 37px 0 15px;
+}
+
+.weiyonghulj{/*为用户累计赚取*/
+    margin: 40px 0 15px;
+}
+
+
+
+.leijijine>p{/*累计总金额 加入总人次 为用户自动投标 为用户累计赚取*/
+    color: #2f2f2f;/*字体颜色*/
+    font-size: 15px;/*字体大小*/
+
+}
+
+.qianci{ /*￥ 元*/
+    color: #2f2f2f;/*字体颜色*/
+    font-size: 18px;/*字体大小*/
+}
+
+.ziticx{/*取消数字粗体*/
+    font-weight: normal;
+}
+
+.shuzikuandu{/*298,747,714宽度*/
+    width: 250px;
+}
+
+/*投资效果样式 结束*/
+
+
+
+
+
+/*合作伙伴样式 开始*/
+.hezuogengd{/*合作伙伴&更多*/
+    width: 100%;/*宽度*/
+    height: 60px;/*高度*/
+    color: #2f2f2f;/*字体颜色*/
+    padding: 0 10px;/*内边距*/
+    font-size: 18px;/*字体大小*/
+}
+
+.hezuo{/*合作伙伴*/
+    float: left;/*往左*/
+    padding-top: 20px;/*内边距*/
+
+}
+
+.gengduo{/*更多*/
+    color: #2f2f2f;/*字体颜色*/
+    float: right;/*往右*/
+    padding-top: 20px;/*内边距*/
+    text-decoration: none;/*无下划线*/
+}
+
+
+.jianju{/*合作伙伴图标零间距*/
+    padding:7px 0 7px 54px;/*上&下&左右边距*/
+    font-size: 0px}/*零间距*/
+
+
+#huopan>a{/*合作伙伴图标样式*/
+    width: 207px;/*宽度*/
+    height: 65px;/*高度*/
+    display: inline-block;/*行块级*/
+    border: 1px solid #c3c3c3;/*描边*/
+    margin-right: 86px;/*右外边距*/
+    margin-bottom: 33px;/*下外边距*/
+}
+
+#huopan>.a4{/*信易贷&钱多多右外边距*/
+    margin-right: 54px;/*右外边距*/
+}
+
+#huopan>.ma4-0{/*财富帮&258&陆金所&钱多多 样式*/
+    margin-bottom: 0/*下外边距*/
+}
+
+.a-1{/*中国民生银行图片*/
+    background-image: url(../img/minsheng.jpg);
+    background-repeat: no-repeat;/*图片不平铺*/
+    background-position: center;/*图片定位*/
+}
+
+.a-2{/*恒昌图片*/
+    background-image: url(../img/hengchang.jpg);
+    background-repeat: no-repeat;/*图片不平铺*/
+    background-position: center;/*图片定位*/
+}
+
+.a-3{/*宜信图片*/
+    background-image: url(../img/xinyi.jpg);
+    background-repeat: no-repeat;/*图片不平铺*/
+    background-position: center;/*图片定位*/
+}
+
+.a-4{/*信易贷图片*/
+    background-image: url(../img/xinyidai.jpg);
+    background-repeat: no-repeat;/*图片不平铺*/
+    background-position: center;/*图片定位*/
+}
+
+.a-5{/*财富帮图片*/
+    background-image: url(../img/caifubagn.jpg);
+    background-repeat: no-repeat;/*图片不平铺*/
+    background-position: center;/*图片定位*/
+}
+
+.a-6{/*258集团图片*/
+    background-image: url(../img/258.jpg);
+    background-repeat: no-repeat;/*图片不平铺*/
+    background-position: center;/*图片定位*/
+}
+
+.a-7{/*陆金所图片*/
+    background-image: url(../img/lujinsuo.jpg);
+    background-repeat: no-repeat;/*图片不平铺*/
+    background-position: center;/*图片定位*/
+}
+
+.a-8{/*钱多多图片*/
+    background-image: url(../img/qianduoduo.jpg);
+    background-repeat: no-repeat;/*图片不平铺*/
+    background-position: center;/*图片定位*/
+}
+/*合作伙伴样式 结束*/
+
+
+
+/*友情链接样式 开始*/
+
+.youqjj{/*友情链接&更多*/
+    width: 100%;/*宽度*/
+    height: 60px;/*高度*/
+    color: #2f2f2f;/*字体颜色*/
+    font-size: 18px;/*字体大小*/
+    background: white;/*背景颜色*/
+}
+
+.youqing{/*友情链接*/
+    float: left;/*往左*/
+    margin: 30px 0 15px 10px;/*边距*/
+}
+
+.yqgengduo{/*更多*/
+    float: right;/*往右*/
+    text-decoration: none;/*取消下划线*/
+    margin: 30px 10px 15px 0;/*边距*/
+}
+
+
+.yqgaodu{/*合作伙伴*/
+    width: 100%;/*宽度*/
+    height: 50px;/*高度*/
+    font-size: 18px;/*字体大小*/
+    margin: 10px 10px 22px 10px;/*外边距*/
+
+}
+
+.yqgaodu>.yq-1:focus{/*伪类（获取焦点）*/
+    color: #ffba00;/*字体颜色*/
+}
+
+.yq-1{/*258集团.....民生银行*/
+    color: #2f2f2f;/*字体默认颜色*/
+    margin-right: 36px;/*右外边距*/
+    text-decoration: none;/*取消下划线*/
+}
+/*友情链接样式 结束*/
+
+
+
+
+
+/*页脚样式 开始*/
+
+.yjkd{/*页脚宽度&高度*/
+    width: 100%;/*宽度*/
+    height: 355px;/*高度*/
+    background: #eeeeee;/*背景颜色*/
+    border: 1px solid #a3a3a3;/*描边*/
+}
+
+
+.nrkd{/*内容宽度&高度*/
+    width: 670px;/*宽度*/
+    height: 117px;/*高度*/
+    margin: 50px 290px;/*外边距*/
+    text-align: center;/*水平居中*/
+}
+
+
+
+.ftjj{/*关于我们...新手引导*/
+    font-size: 0px;/*零间距*/
+    text-align: center;/*水平居中*/
+    margin-top: 50px;/*上 外边距*/
+}
+
+.ft-a{/*关于我们...我要借款*/
+    color: #0f3990;/*字体颜色*/
+    font-size: 15px;/*字体大小*/
+    padding: 1px 24px;/*内边距 上&右*/
+    text-decoration: none;/*取消下划线*/
+    border-right: 1px solid #2e4c97;/*字体分隔线*/
+}
+
+.ft-b{/*新手指导*//*（因为右边没分隔线，所以单独分开写）*/
+    color: #0f3990;/*字体颜色*/
+    font-size: 15px;/*字体大小*/
+    padding: 1px 24px;/*内边距 上&右*/
+    text-decoration: none;/*取消下划线*/
+}
+
+
+
+.ftziti{/*页脚字体*//*厦门钱宝宝投资发展有限公司*/
+    font-size: 12px;/*字体大小*/
+    margin: 40px 0 30px 0;/*外边距*/
+}
+
+
+
+#ljj{/*页脚图标 零间距*/
+    font-size: 0px;/*零间距*/
+    text-align: center;/*水平居中*/
+}
+
+.yjtb{/*页脚图标*/
+    margin-right: 25px;/*右外边距*/
+    list-style: none;/*取消有序列表*/
+    display: inline-block;/*行块级*/
+}
+
+/*页脚样式 结束*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
